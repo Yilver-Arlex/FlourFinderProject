@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/login_logup.css">
+    <title>Iniciar Sesión</title>
+</head>
+
+<body>
+    <main>
+
+        <!--Iniciar Sesion-->
+
+        <section id="iniciarSesion" class="section-iniciarSesion">
+            <div class="contenedor">
+                <div class="indicador">
+                    <img src="../img/MuyUtilizadas/FlourFinder.png" alt="">
+                    <h2>Iniciar Sesión</h2>
+                </div>
+                <form class="form">
+                    <div class="separador">
+                        <label for="email-in" class="i-text">Email</label>
+                        <input type="text" class=" input-caracter" id="email-in">
+                        <p class="input-error" id="error-email-in"></p>
+                    </div>
+
+                    <div class="separador">
+                        <label for="password-in" class="i-text">Contraseña</label>
+                        <input type="password" class="input-caracter" id="password-in">
+                        <p class="input-error" id="error-password-in"></p>
+                    </div>
+
+                    <button>Iniciar Sesion</button>
+                </form>
+
+                <div class="separador-opciones">
+                    <div class="lin linea1"></div>
+                    <span>O</span>
+                    <div class="lin linea2"></div>
+                </div>
+                <div class="otras-formas">
+                    <button class="btn-google">
+                        <img src="../img/registrarse/IconGoogleO.webp" alt="">
+                        Iniciar con Google
+                    </button>
+                    <p>¿Aun no tienes cuenta? <a href="#">Crear Cuenta</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../js/registro.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,483 @@
+html {
+    font-size: 16px;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    background-color: #FFFAF0;
+    color: #2D1B14;
+    line-height: 1.6;
+}
+
+button, input {
+    font-size: inherit;
+}
+
+
+
+/*----------Registro--------------*/
+
+
+
+/*Registro*/
+
+.section-registrarse{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    opacity: 0;
+    animation: aparecer 1s ease forwards;
+    animation-delay: 0.5s;
+}
+
+.section-registrarse .contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFAF0;
+    box-shadow: 0 4px 10px #2D1B1426;
+    max-width: 650px;
+    width: 100%;
+    padding: 55px 150px;
+    gap: 50px;
+    border-radius: 20px;
+}
+
+.section-registrarse .contenedor .indicador {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-registrarse .contenedor .indicador img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.section-registrarse .contenedor .indicador h2{
+    font-size: 2rem;
+}
+
+.section-registrarse .contenedor .form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.section-registrarse .contenedor .form .separador{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.section-registrarse .input-caracter {
+    border: none;
+    background-color: transparent;
+    border: 1px solid #D4A373;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: inherit;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.section-registrarse .input-caracter:focus{
+    transform: scale(1.02);
+    border: 2px solid #2D1B14;
+    outline: none;
+    box-shadow: 0 4px 10px #2D1B1426;
+}
+
+.section-registrarse .form button {
+    padding: 10px 50px;
+    border:none;
+    background-color: #F5E0B7;
+    border-radius: 8px;
+    transition: 0.5s ease;
+    margin-top: 40px;
+}
+
+.section-registrarse .form button:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px #2D1B1426;
+}
+
+.section-registrarse .contenedor .separador-opciones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.section-registrarse .contenedor .otras-formas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+}
+
+.section-registrarse .contenedor .separador-opciones span{
+    font-size: 1rem;
+}
+
+.section-registrarse .contenedor .separador-opciones .lin {
+    background-color: #D4A373;
+    height: 1px;
+    width: 150px;
+}
+
+.section-registrarse .contenedor .otras-formas .btn-google {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: transparent;
+    padding: 10px 20px;
+    border: none;
+    background-color: transparent;
+    border: 1px solid #D4A373;
+    border-radius: 8px;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.section-registrarse .contenedor .otras-formas .btn-google:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px #2D1B1426;
+}
+
+.section-registrarse .contenedor .otras-formas .btn-google img{
+    width: 25px;
+    object-fit: contain;
+}
+
+.section-registrarse .contenedor .otras-formas p a{
+    text-decoration: none;
+    color: #E67E22;
+}
+
+
+/*Verificación Email*/
+
+.section-verificacion-email{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    opacity: 0;
+    min-height: 100vh;
+    animation: aparecer 1s ease forwards;
+    animation-delay: 0.5s;
+}
+
+.section-verificacion-email .contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFAF0;
+    box-shadow: 0 4px 10px #2D1B1426;
+    max-width: 650px;
+    width: 100%;
+    padding: 55px 120px;
+    gap: 50px;
+    border-radius: 20px;
+    height: 800px;
+}
+
+.section-verificacion-email .contenedor h2{ 
+    font-size: 2rem;
+}
+
+.section-verificacion-email .contenedor p{
+    text-align: center;
+}
+.section-verificacion-email .contenedor .inputs-code {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.section-verificacion-email .contenedor .inputs-code .i-code{
+    width: 80px;
+    height: 80px;
+    background-color: transparent;
+    border: none;
+    border: 1px solid #D4A373;
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.section-verificacion-email .contenedor .inputs-code .i-code:focus{
+    transform: scale(1.02);
+    outline: none;
+    border: 2px solid #2D1B14;
+    box-shadow: 0 4px 10px #2D1B1426;
+}
+
+.section-verificacion-email .contenedor .indicacion-tiempo{
+    font-size: 0.9rem;
+}
+
+
+
+/*Finalizado el registro*/
+
+
+.section-final-registro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    opacity: 0;
+    min-height: 100vh;
+    animation: aparecer 1s ease forwards;
+    animation-delay: 0.5s;
+}
+
+.section-final-registro .contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFAF0;
+    box-shadow: 0 4px 10px #2D1B1426;
+    max-width: 650px;
+    width: 100%;
+    padding: 55px 100px;
+    gap: 50px;
+    border-radius: 20px;
+    height: 800px;
+    position: relative;
+}
+
+.section-final-registro .contenedor .indicador{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-final-registro .contenedor .indicador img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.section-final-registro .contenedor .indicador h2{
+    font-size: 2rem;
+}
+
+.section-final-registro .contenedor .description-finalizacion {
+    text-align: center;
+}
+
+.section-final-registro .contenedor button {
+    border: none;
+    padding: 10px 50px;
+    background-color: #F5E0B7;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.5s ease;
+    position: absolute;
+    bottom: 80px;
+}
+
+.section-final-registro .contenedor button:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px #2D1B1426;
+}
+
+
+
+
+
+/*Iniciar Sesion*/
+
+
+
+
+
+/*----------Iniciar Sesion--------------*/
+
+
+/*Registro*/
+
+.section-iniciarSesion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.section-iniciarSesion .contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFAF0;
+    box-shadow: 0 4px 10px #2D1B1426;
+    max-width: 650px;
+    width: 100%;
+    padding: 55px 150px;
+    gap: 50px;
+    border-radius: 20px;
+}
+
+.section-iniciarSesion .contenedor .indicador {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-iniciarSesion .contenedor .indicador img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.section-iniciarSesion .contenedor .indicador h2{
+    font-size: 2rem;
+}
+
+.section-iniciarSesion .contenedor .form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.section-iniciarSesion .contenedor .form .separador{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.section-iniciarSesion .input-caracter {
+    border: none;
+    background-color: transparent;
+    border: 1px solid #D4A373;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: inherit;
+}
+
+.section-iniciarSesion .input-caracter:focus{
+    padding: 10px;
+    border: 2px solid #2D1B14;
+    outline: none;
+    box-shadow: 0 4px 10px #2D1B1426;
+}
+
+.section-iniciarSesion .form button {
+    padding: 10px 50px;
+    border:none;
+    background-color: #F5E0B7;
+    border-radius: 8px;
+    margin-top: 40px;
+    transition: 0.5s ease;
+}
+
+.section-iniciarSesion .form button:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px #2D1B1426;
+}
+
+.section-iniciarSesion .contenedor .separador-opciones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.section-iniciarSesion .contenedor .separador-opciones span{
+    font-size: 1rem;
+}
+
+.section-iniciarSesion .contenedor .separador-opciones .lin {
+    background-color: #D4A373;
+    height: 1px;
+    width: 150px;
+}
+
+.section-iniciarSesion .contenedor .otras-formas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+}
+
+.section-iniciarSesion .contenedor .otras-formas .btn-google {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: transparent;
+    padding: 10px 20px;
+    border: none;
+    background-color: transparent;
+    border: 1px solid #D4A373;
+    border-radius: 8px;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.section-iniciarSesion .contenedor .otras-formas .btn-google:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px #2D1B1426;
+}
+
+.section-iniciarSesion .contenedor .otras-formas .btn-google img{
+    width: 25px;
+    object-fit: contain;
+}
+
+.section-iniciarSesion .contenedor .otras-formas p a{
+    text-decoration: none;
+    color: #E67E22;
+}
+
+
+
+
+
+
+/*----------Animaciones--------------*/
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+

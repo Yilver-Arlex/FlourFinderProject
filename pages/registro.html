@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/login_logup.css">
+    <title>Registro FlourFinder</title>
+</head>
+
+<body>
+    <main>
+
+        <!--Registro-->
+
+        <section id="registrarse" class="section-registrarse">
+            <div class="contenedor">
+                <div class="indicador">
+                    <img src="../img/MuyUtilizadas/FlourFinder.png" alt="">
+                    <h2>Registrarse</h2>
+                </div>
+                <form class="form">
+                    <div class="separador">
+                        <label for="email-up" class="i-text">Email</label>
+                        <input type="text" class=" input-caracter" id="email-up">
+                        <p class="input-error" id="error-email-up"></p>
+                    </div>
+
+                    <div class="separador">
+                        <label for="password-up" class="i-text">Contraseña</label>
+                        <input type="password" class=" input-caracter" id="password-up">
+                        <p class="input-error" id="error-password-up"></p>
+                    </div>
+
+                    <div class="separador">
+                        <label for="identificacion-up" class="i-text">Identificación</label>
+                        <input type="text" class=" input-caracter" id="identificacion-up">
+                        <p class="input-error" id="error-identification-up"></p>
+                    </div>
+                    <button>Registrarse</button>
+                </form>
+
+                <div class="separador-opciones">
+                    <div class="lin linea1"></div>
+                    <span>O</span>
+                    <div class="lin linea2"></div>
+                </div>
+                <div class="otras-formas">
+                    <button class="btn-google">
+                        <img src="../img/registrarse/IconGoogleO.webp" alt="">
+                        Iniciar con Google
+                    </button>
+                    <p>¿Ya tienes cuenta? <a href="#">Iniciar Sesión</a></p>
+                </div>
+            </div>
+        </section>
+
+
+        <!--Verificación Email-->
+
+        <div id="veriricacion-email" class="section-verificacion-email">
+            <div class="contenedor">
+                <h2>Verificación de Email</h2>
+                <p class="indicaciones">Te enviaremos un codigo de verificacion a tu email example@gmail.com</p>
+                <div class="inputs-code">
+                    <input type="text" class="i-code" id="code1">
+                    <input type="text" class="i-code" id="code2">
+                    <input type="text" class="i-code" id="code3">
+                    <input type="text" class="i-code" id="code4">
+                </div>
+                <span class="indicacion-tiempo">Codigo valido por  5 min</span>
+            </div>
+        </div>
+
+
+        <!--Finalizado Registro-->
+
+        <section class="section-final-registro" id="final-registro">
+            <div class="contenedor">
+                <div class="indicador">
+                    <img src="../img/MuyUtilizadas/FlourFinder.png" alt="">
+                    <h2>¡Te has registrado!</h2>
+                </div>
+                <p class="description-finalizacion">Tu registro se completó correctamente. Desde ahora puedes disfrutar de todo lo que FlourFinder ofrece, explorar panaderías, encontrar opciones cercanas y aprovechar al máximo la plataforma. ¡Bienvenido!</p>
+                <button>Aceptar</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="../js/registro.js"></script>
+</body>
+
+</html>
