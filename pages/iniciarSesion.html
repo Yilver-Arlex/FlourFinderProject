@@ -4,6 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../css/login_logup.css">
     <title>Iniciar Sesión</title>
 </head>
@@ -16,20 +21,24 @@
         <section id="iniciarSesion" class="section-iniciarSesion">
             <div class="contenedor">
                 <div class="indicador">
-                    <img src="../img/MuyUtilizadas/FlourFinder.png" alt="">
+                    <img src="../img/MuyUtilizadas/FlourFinder.avif" alt="">
                     <h2>Iniciar Sesión</h2>
                 </div>
-                <form class="form">
+                <form class="form-in">
                     <div class="separador">
-                        <label for="email-in" class="i-text">Email</label>
-                        <input type="text" class=" input-caracter" id="email-in">
-                        <p class="input-error" id="error-email-in"></p>
+                        <div class="indications-texts">
+                            <label for="email-in" class="i-text">Email</label>
+                            <span class="input-text-error"></span>
+                        </div>
+                        <input type="email" class=" input-caracter" id="email-in">
                     </div>
 
                     <div class="separador">
-                        <label for="password-in" class="i-text">Contraseña</label>
+                        <div class="indications-texts">
+                            <label for="password-in" class="i-text">Contraseña</label>
+                            <span class="input-text-error"></span>
+                        </div>
                         <input type="password" class="input-caracter" id="password-in">
-                        <p class="input-error" id="error-password-in"></p>
                     </div>
 
                     <button>Iniciar Sesion</button>
@@ -42,16 +51,16 @@
                 </div>
                 <div class="otras-formas">
                     <button class="btn-google">
-                        <img src="../img/registrarse/IconGoogleO.webp" alt="">
+                        <img src="../img/registrarse/IconGoogleO.avif" alt="">
                         Iniciar con Google
                     </button>
-                    <p>¿Aun no tienes cuenta? <a href="#">Crear Cuenta</a></p>
+                    <p>¿Aun no tienes cuenta? <a href="./registro.html">Crear Cuenta</a></p>
                 </div>
             </div>
         </section>
     </main>
 
-    <script src="../js/registro.js"></script>
+    <script src="../js/iniciarSesion.js"></script>
 </body>
 
 </html>

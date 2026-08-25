@@ -92,7 +92,7 @@ main {
 }
 
 .section-inicio {
-    background-image: url(/img/landingPage/FondoPrincipal.jpeg);
+    background-image: url(/img/landingPage/FondoPrincipal.avif);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -138,6 +138,9 @@ main {
 
 .section-inicio .tranparenciaOscura .contenedor-contenido .mini-cualidades {
     display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 70px;
 }
 
@@ -163,10 +166,11 @@ main {
 
 .section-inicio .tranparenciaOscura .contenedor-contenido .principal-buttons {
     display: flex;
-    text-align: center;
     align-items: center;
+    justify-content: center;
     gap: 30px;
     margin-top: 100px;
+    flex-wrap: wrap;
 }
 
 .section-inicio .tranparenciaOscura .contenedor-contenido .principal-buttons .a-btn{
@@ -352,20 +356,21 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 200px 50px;
+    padding: 150px 50px;
 }
 
 .section-contactanos .contenido{
     display: flex;
-    background-color: #FAF0DF;
-    gap: 120px;
+    background-color: #F2E2C6;
+    gap: 100px;
     justify-content: center;
     align-items: center;
-    padding: 120px 150px;
+    padding: 150px 150px;
     border-radius: 8px;
     opacity: 0;
     animation: aparecer 1s ease forwards;
     animation-delay: 0.5s;
+    flex-wrap: wrap;
 }
 
 .section-contactanos .contenido .contenido-textual{
@@ -382,7 +387,7 @@ main {
 
 .section-contactanos .contenido .contenido-textual .a-btn{
     font-size: 1rem;
-    padding: 10px 20px;
+    padding: 8px 16px;
     border: none;
     border-radius: 8px;
     background-color: #E67E22;
@@ -403,7 +408,7 @@ main {
 }
 
 .section-contactanos .contenido .div-img img{
-    width: 500px;
+    width: 600px;
 }
 
 
@@ -416,6 +421,7 @@ footer{
     align-items: center;
     gap: 200px;
     padding: 80px 5px;
+    flex-wrap: wrap;
 }
 
 footer .text-invitacion{
@@ -493,9 +499,54 @@ footer .formas-contacto .contacto p{
 }
 
 
+/*----------Animaciones--------------*/
 
 
-
-
+@media (max-width: 768px){
+    html {
+    font-size: 15px;
+    }
+    .bar{
+        padding: 10px;
+    }
+    .bar .enlase-inicio{
+        max-width: 45px;
+        width: 100%;
+    }
+    .bar .opciones-botones{
+        gap: 10px;
+    }
+    .bar .opciones-botones .a-btn{
+        padding: 5px;
+    }
+    .section-inicio .tranparenciaOscura .contenedor-contenido{
+        padding: 20px;
+    }
+    .section-inicio .tranparenciaOscura .contenedor-contenido .titulo {
+        font-size: 2.5rem;
+    }
+    .section-explora h2{
+        text-align: center;
+    }
+    .section-funcionamiento h2{
+        text-align: center;
+    }
+    /*Targeta de contactanos*/
+    .section-contactanos .contenido{
+        padding: 50px 30px;
+    }
+    .section-contactanos .contenido .contenido-textual{
+        align-items: center;
+        text-align: center;
+    }
+    /*Img de la targeta contactanos*/
+    .section-contactanos .contenido .div-img img{
+        width: 300px;
+    }
+    /*Footer*/
+    footer{
+        gap: 50px;
+    }
+}
 
 

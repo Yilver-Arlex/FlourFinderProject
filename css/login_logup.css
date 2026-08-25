@@ -21,6 +21,10 @@ button, input {
     font-size: inherit;
 }
 
+button {
+    cursor: pointer;
+}
+
 
 
 /*----------Registro--------------*/
@@ -33,10 +37,8 @@ button, input {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px;
-    opacity: 0;
-    animation: aparecer 1s ease forwards;
-    animation-delay: 0.5s;
+    min-height: 100vh;
+    padding: 40px;
 }
 
 .section-registrarse .contenedor{
@@ -51,6 +53,9 @@ button, input {
     padding: 55px 150px;
     gap: 50px;
     border-radius: 20px;
+    opacity: 0;
+    animation: aparecer 1s ease forwards;
+    animation-delay: 0.5s;
 }
 
 .section-registrarse .contenedor .indicador {
@@ -70,7 +75,7 @@ button, input {
     font-size: 2rem;
 }
 
-.section-registrarse .contenedor .form{
+.section-registrarse .contenedor .form-up{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -79,10 +84,16 @@ button, input {
     cursor: pointer;
 }
 
-.section-registrarse .contenedor .form .separador{
+.section-registrarse .contenedor .form-up .separador{
     display: flex;
     flex-direction: column;
     width: 100%;
+}
+
+.section-registrarse .contenedor .form-up .separador .indications-texts{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .section-registrarse .input-caracter {
@@ -97,12 +108,12 @@ button, input {
 
 .section-registrarse .input-caracter:focus{
     transform: scale(1.02);
-    border: 2px solid #2D1B14;
+    border: 1px solid #2D1B14;
     outline: none;
     box-shadow: 0 4px 10px #2D1B1426;
 }
 
-.section-registrarse .form button {
+.section-registrarse .form-up button {
     padding: 10px 50px;
     border:none;
     background-color: #F5E0B7;
@@ -111,7 +122,7 @@ button, input {
     margin-top: 40px;
 }
 
-.section-registrarse .form button:hover{
+.section-registrarse .form-up button:hover{
     transform: scale(1.05);
     box-shadow: 0 4px 10px #2D1B1426;
 }
@@ -182,10 +193,7 @@ button, input {
     justify-content: center;
     align-items: center;
     padding: 50px;
-    opacity: 0;
     min-height: 100vh;
-    animation: aparecer 1s ease forwards;
-    animation-delay: 0.5s;
 }
 
 .section-verificacion-email .contenedor{
@@ -200,6 +208,9 @@ button, input {
     gap: 50px;
     border-radius: 20px;
     height: 800px;
+    opacity: 0;
+    animation: aparecer 1s ease forwards;
+    animation-delay: 0.5s
 }
 
 .section-verificacion-email .contenedor h2{ 
@@ -209,14 +220,14 @@ button, input {
 .section-verificacion-email .contenedor p{
     text-align: center;
 }
-.section-verificacion-email .contenedor .inputs-code {
+.section-verificacion-email .contenedor .part-input-code .inputs-code {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
 
-.section-verificacion-email .contenedor .inputs-code .i-code{
+.section-verificacion-email .contenedor .part-input-code .inputs-code .i-code{
     width: 80px;
     height: 80px;
     background-color: transparent;
@@ -228,11 +239,19 @@ button, input {
     transition: transform 0.3s ease;
 }
 
-.section-verificacion-email .contenedor .inputs-code .i-code:focus{
+.section-verificacion-email .contenedor .part-input-code .inputs-code .i-code:focus{
     transform: scale(1.02);
     outline: none;
     border: 2px solid #2D1B14;
     box-shadow: 0 4px 10px #2D1B1426;
+}
+
+.section-verificacion-email .contenedor .part-input-code{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
 }
 
 .section-verificacion-email .contenedor .indicacion-tiempo{
@@ -249,10 +268,7 @@ button, input {
     justify-content: center;
     align-items: center;
     padding: 50px;
-    opacity: 0;
     min-height: 100vh;
-    animation: aparecer 1s ease forwards;
-    animation-delay: 0.5s;
 }
 
 .section-final-registro .contenedor{
@@ -268,6 +284,9 @@ button, input {
     border-radius: 20px;
     height: 800px;
     position: relative;
+    opacity: 0;
+    animation: aparecer 1s ease forwards;
+    animation-delay: 0.5s
 }
 
 .section-final-registro .contenedor .indicador{
@@ -291,18 +310,19 @@ button, input {
     text-align: center;
 }
 
-.section-final-registro .contenedor button {
+.section-final-registro .contenedor a {
     border: none;
     padding: 10px 50px;
     background-color: #F5E0B7;
-    cursor: pointer;
     border-radius: 8px;
     transition: 0.5s ease;
     position: absolute;
     bottom: 80px;
+    text-decoration: none;
+    color: inherit;
 }
 
-.section-final-registro .contenedor button:hover{
+.section-final-registro .contenedor a:hover{
     transform: scale(1.05);
     box-shadow: 0 4px 10px #2D1B1426;
 }
@@ -326,7 +346,8 @@ button, input {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+    padding: 40px;
+    min-height: 100vh;
 }
 
 .section-iniciarSesion .contenedor{
@@ -341,6 +362,9 @@ button, input {
     padding: 55px 150px;
     gap: 50px;
     border-radius: 20px;
+    opacity: 0;
+    animation: aparecer 1s ease forwards;
+    animation-delay: 0.5s;
 }
 
 .section-iniciarSesion .contenedor .indicador {
@@ -360,7 +384,7 @@ button, input {
     font-size: 2rem;
 }
 
-.section-iniciarSesion .contenedor .form{
+.section-iniciarSesion .contenedor .form-in{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -369,10 +393,15 @@ button, input {
     cursor: pointer;
 }
 
-.section-iniciarSesion .contenedor .form .separador{
+.section-iniciarSesion .contenedor .form-in .separador{
     display: flex;
     flex-direction: column;
     width: 100%;
+}
+
+.section-iniciarSesion .contenedor .form-in .separador .indications-texts{
+    display:  flex;
+    justify-content: space-between;
 }
 
 .section-iniciarSesion .input-caracter {
@@ -386,12 +415,12 @@ button, input {
 
 .section-iniciarSesion .input-caracter:focus{
     padding: 10px;
-    border: 2px solid #2D1B14;
+    border: 1px solid #2D1B14;
     outline: none;
     box-shadow: 0 4px 10px #2D1B1426;
 }
 
-.section-iniciarSesion .form button {
+.section-iniciarSesion .form-in button {
     padding: 10px 50px;
     border:none;
     background-color: #F5E0B7;
@@ -400,7 +429,7 @@ button, input {
     transition: 0.5s ease;
 }
 
-.section-iniciarSesion .form button:hover{
+.section-iniciarSesion .form-in button:hover{
     transform: scale(1.05);
     box-shadow: 0 4px 10px #2D1B1426;
 }
@@ -465,6 +494,57 @@ button, input {
 
 
 
+/*----------Mostrador de erroes--------------*/
+
+.input-text-error{
+    color: #D32F2F;
+}
+
+
+/*----------Generacion de codigos--------------*/
+.div-code{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 70px;
+    align-items: center;
+    background-color: #FFFAF0;
+    box-shadow: 0 4px 10px #2D1B1426;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    z-index: 99;
+    border-radius: 8px;
+    opacity: 0;
+    animation: aparecer_code 1.5s ease forwards;
+    animation-delay: 0.5s;
+}
+
+.div-code .code-verif{
+    font-size: 1.5rem;
+}
+
+.div-code .close-target-code{
+    border: none;
+    padding: 10px 10px;
+    border-radius: 8px;
+    background-color: #E67E22;
+    color: #FFFAF0;
+    transition: 0.5s ease;
+}
+
+.div-code .close-target-code:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px #2D1B1426;
+}
+
+
+/*----------Ocultar secciones--------------*/
+
+.ocultarse {
+    display: none;
+}
+
 
 
 /*----------Animaciones--------------*/
@@ -479,5 +559,33 @@ button, input {
         transform: translateY(0);
     }
 }
+
+@keyframes aparecer_code {
+    from {
+        opacity: 0;
+        transform: translateY(500px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@media (max-width: 768px){
+    .section-registrarse, .section-iniciarSesion .section-verificacion-email{
+        padding: 0;
+    }
+    .section-registrarse .contenedor, .section-iniciarSesion .contenedor, .section-verificacion-email .contenedor{
+        padding: 40px;
+        box-shadow: none;
+        background-color: transparent;
+        width: 100%;
+    }
+    .section-registrarse .contenedor .separador-opciones .lin{
+        width: 100px;
+    }
+}
+
 
 

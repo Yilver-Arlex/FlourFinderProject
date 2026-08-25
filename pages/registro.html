@@ -4,6 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../css/login_logup.css">
     <title>Registro FlourFinder</title>
 </head>
@@ -16,26 +21,32 @@
         <section id="registrarse" class="section-registrarse">
             <div class="contenedor">
                 <div class="indicador">
-                    <img src="../img/MuyUtilizadas/FlourFinder.png" alt="">
+                    <img src="../img/MuyUtilizadas/FlourFinder.avif" alt="">
                     <h2>Registrarse</h2>
                 </div>
-                <form class="form">
+                <form class="form-up">
                     <div class="separador">
-                        <label for="email-up" class="i-text">Email</label>
-                        <input type="text" class=" input-caracter" id="email-up">
-                        <p class="input-error" id="error-email-up"></p>
+                        <div class="indications-texts">
+                            <label for="email-up" class="i-text">Email</label>
+                            <span class="input-text-error"></span>
+                        </div>
+                        <input type="email" class=" input-caracter" id="email-up">
                     </div>
 
                     <div class="separador">
-                        <label for="password-up" class="i-text">Contraseña</label>
+                        <div class="indications-texts">
+                            <label for="password-up" class="i-text">Contraseña</label>
+                            <span class="input-text-error"></span>
+                        </div>
                         <input type="password" class=" input-caracter" id="password-up">
-                        <p class="input-error" id="error-password-up"></p>
                     </div>
 
                     <div class="separador">
-                        <label for="identificacion-up" class="i-text">Identificación</label>
+                        <div class="indications-texts">
+                            <label for="identificacion-up" class="i-text">Identificación</label>
+                            <span class="input-text-error"></span>
+                        </div>
                         <input type="text" class=" input-caracter" id="identificacion-up">
-                        <p class="input-error" id="error-identification-up"></p>
                     </div>
                     <button>Registrarse</button>
                 </form>
@@ -47,10 +58,10 @@
                 </div>
                 <div class="otras-formas">
                     <button class="btn-google">
-                        <img src="../img/registrarse/IconGoogleO.webp" alt="">
+                        <img src="../img/registrarse/IconGoogleO.avif" alt="">
                         Iniciar con Google
                     </button>
-                    <p>¿Ya tienes cuenta? <a href="#">Iniciar Sesión</a></p>
+                    <p>¿Ya tienes cuenta? <a href="./iniciarSesion.html">Iniciar Sesión</a></p>
                 </div>
             </div>
         </section>
@@ -58,31 +69,36 @@
 
         <!--Verificación Email-->
 
-        <div id="veriricacion-email" class="section-verificacion-email">
+        <div id="verificacion-email" class="section-verificacion-email ocultarse">
             <div class="contenedor">
                 <h2>Verificación de Email</h2>
                 <p class="indicaciones">Te enviaremos un codigo de verificacion a tu email example@gmail.com</p>
-                <div class="inputs-code">
-                    <input type="text" class="i-code" id="code1">
-                    <input type="text" class="i-code" id="code2">
-                    <input type="text" class="i-code" id="code3">
-                    <input type="text" class="i-code" id="code4">
+                <div class="part-input-code">
+                    <div class="inputs-code">
+                        <input type="text" class="i-code" id="code1" maxlength="1">
+                        <input type="text" class="i-code" id="code2" maxlength="1">
+                        <input type="text" class="i-code" id="code3" maxlength="1">
+                        <input type="text" class="i-code" id="code4" maxlength="1">
+                    </div>
+                    <span class="input-text-error"></span>
                 </div>
-                <span class="indicacion-tiempo">Codigo valido por  5 min</span>
+                <span class="indicacion-tiempo">Codigo valido por 5 min</span>
             </div>
         </div>
 
 
         <!--Finalizado Registro-->
 
-        <section class="section-final-registro" id="final-registro">
+        <section class="section-final-registro ocultarse" id="final-registro">
             <div class="contenedor">
                 <div class="indicador">
-                    <img src="../img/MuyUtilizadas/FlourFinder.png" alt="">
+                    <img src="../img/MuyUtilizadas/FlourFinder.avif" alt="">
                     <h2>¡Te has registrado!</h2>
                 </div>
-                <p class="description-finalizacion">Tu registro se completó correctamente. Desde ahora puedes disfrutar de todo lo que FlourFinder ofrece, explorar panaderías, encontrar opciones cercanas y aprovechar al máximo la plataforma. ¡Bienvenido!</p>
-                <button>Aceptar</button>
+                <p class="description-finalizacion">Tu registro se completó correctamente. Desde ahora puedes disfrutar
+                    de todo lo que FlourFinder ofrece, explorar panaderías, encontrar opciones cercanas y aprovechar al
+                    máximo la plataforma. ¡Bienvenido!</p>
+                <a href="./home.html">Aceptar</a>
             </div>
         </section>
     </main>
